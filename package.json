@@ -1,0 +1,33 @@
+{
+  "name": "hexo-cli-extras",
+  "description": "Hexo plugin that adds an edit, rename, remove, isolate and integrate command for easier command line administration of your Hexo-powered website.",
+  "keywords": [
+    "hexo",
+    "plugin",
+    "cli",
+    "command line"
+  ],
+  "version": "1.0.0",
+  "main": "index",
+  "author": "Gregory Scheerlinck <gregory.scheerlinck@gmail.com> (http://gregjs.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greg-js/hexo-cli-extras.git"
+  },
+  "license": {
+    "type": "MIT"
+  },
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "chalk": "^1.1.1",
+    "hexo-util": "^0.2.1",
+    "inquirer": "^0.11.0",
+    "moment": "^2.10.6",
+    "open": "0.0.5",
+    "rimraf": "^2.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^1.9.0",
+    "eslint-config-airbnb": "^1.0.0"
+  }
+}

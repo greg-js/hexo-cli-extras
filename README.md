@@ -25,10 +25,15 @@ hexo edit [title] [-a | --after MM-DD-YYYY] [-b | --before MM-DD-YYYY] [-c | --c
 
 
 *Note: Installing this will also cause any new post you create with `hexo new ...` to open automatically in your text editor.*
+
 *Note: boolean options can be combined (for example `hexo edit -dp` to search for drafts that are pages)*
+
 *Note: Drafts will only appear in regular searches (those without the special draft option) if you have `render_drafts` set to true in `_config.yml`. If it's set to false, you'll have to use the `--draft` option to filter on drafts and the single letter `-d` option won't work for some weird reason. Also, drafts will be excluded automatically if you use any of the date filters, as a date makes little sense for a draft.*
+
 *Note: Filter on title first and use boolean options last or you may get unexpected results. For example, `hexo edit -g my post` will filter just on "post" whereas `hexo edit my draft -g` will correctly filter on "my draft".*
+
 *Note: By default, files will open in your current terminal window, using whatever you've set as the global `$EDITOR` variable (you can set it in `.bashrc` or `.zshrc` if it's empty, don't forget to source the file before testing). The `gui` option (or the lack of an `$EDITOR` variable) will cause files to open with `xdg-open` (linux, osx) or `start` (windows)*
+
 *Note: Simply calling `hexo edit` will open a menu with all your posts in descending chronological order.*
 
 ## rename
@@ -46,6 +51,7 @@ hexo rename <old title/slug> <-n | --new "new title">
 After selecting a file, you will be presented with another menu. From there you can choose whether to rename the filename, the title of the post, both, or cancel altogether.
 
 *Note: if you have set `render_drafts` to false in `_config.yml`, you won't be able to rename drafts from the command line. It works only with that setting set to true or if you publish the post first.*
+
 *Note: wrap the new title in single or double quotes! If you forget, the presence of spaces or special characters may cause strange behavior.*
 
 

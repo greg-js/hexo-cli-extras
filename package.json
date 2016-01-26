@@ -7,7 +7,7 @@
     "cli",
     "command line"
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index",
   "author": "Gregory Scheerlinck <gregory.scheerlinck@gmail.com> (http://gregjs.com)",
   "repository": {

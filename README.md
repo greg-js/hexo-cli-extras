@@ -2,7 +2,15 @@
 
 This is a simple plugin for [Hexo](https://github.com/hexojs/hexo), a Node.js-based static site generator/blog framework.
 
-It adds a handful of useful (to me) commands to the Hexo command-line interface:
+It adds a handful of useful (to me) commands to the Hexo command-line interface: `edit`, `rename`, `remove`, `isolate` and `integrate`. Check out some gifs to see how it works or read a detailed explanation below or on the command line with `hexo help` followed by one of the commands.
+
+Basic terminal editing:
+
+![example](./docs/basic.gif)
+
+Basic GUI editing and selection on tag (sorry for the bad resolution):
+
+![example](./docs/gui.gif)
 
 ## edit
 
@@ -60,6 +68,8 @@ hexo edit neovim -c vim
 
 Rename a post, page or draft. The title and the filename can be renamed independently or both at the same time.
 
+![example](./docs/rename.png)
+
 ```
 hexo rename <old title/slug> <-n | --new "new title">
 ```
@@ -78,6 +88,8 @@ After selecting a file, you will be presented with another menu. From there you 
 ## remove
 
 Delete a post.
+
+![example](./docs/remove.png)
 
 ```
 hexo remove <search terms>

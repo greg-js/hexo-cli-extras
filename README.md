@@ -68,7 +68,7 @@ hexo edit neovim -c vim
 
 *Note: boolean options can be combined (for example `hexo edit -dp` to search for drafts that are pages)*
 
-*Note: Drafts only appear in searches without the `--drafts` option if you have `render_drafts` set to true in `_config.yml`. If set to false, you **must** use the `--draft` option to filter on drafts. Also, drafts are excluded automatically when you use any of the date filters, because dates makes little sense with drafts.*
+*Note: Drafts only appear in searches without the `--drafts` option if you have `render_drafts` set to true in `_config.yml`. If set to false, you must use the `--draft` option to filter on drafts. Also, drafts are excluded automatically when you use any of the date filters, because dates makes little sense with drafts.*
 
 *Note: Filter on title first and use boolean options last or you may get unexpected results. For example, `hexo edit -g my post` will filter just on "post" whereas `hexo edit my draft -g` will correctly filter on "my draft".*
 

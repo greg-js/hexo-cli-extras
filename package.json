@@ -17,6 +17,9 @@
   "license": {
     "type": "MIT"
   },
+  "scripts": {
+    "lint": "eslint index.js lib/*.js"
+  },
   "dependencies": {
     "bluebird": "^3.0.5",
     "chalk": "^1.1.1",
@@ -27,7 +30,6 @@
     "rimraf": "^2.4.3"
   },
   "devDependencies": {
-    "eslint": "^1.9.0",
-    "eslint-config-airbnb": "^1.0.0"
+    "eslint": "^2.11.0"
   }
 }

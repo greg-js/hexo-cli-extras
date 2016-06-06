@@ -12,7 +12,7 @@ Basic GUI editing and selection on tag (sorry for the bad resolution):
 
 ![example](./docs/gui.gif)
 
-A more detailed explanation of the commands and their options is included below, but remember that you can run `hexo help` followed by any command in your terminal to get a handy overview (for example: `hexo help edit`). Also, at the very bottom of this README, you'll find some tips and notes which may be useful to you.
+A more detailed explanation of the commands and their options is included below, but remember that you can run `hexo help` followed by any command in your terminal to get an overview (eg `hexo help edit`). You may also find the tips and notes at the very bottom of this README useful.
 
 ## Installation
 
@@ -66,13 +66,15 @@ hexo edit neovim -c vim
 - `-p` or `--page` (optional) selects pages instead of posts
 
 
-*Note: boolean options can be combined (for example `hexo edit -dp` to search for drafts that are pages)*
+*Note*: boolean options can be combined (for example `hexo edit -dp` to search for drafts that are pages)
 
-*Note: Drafts only appear in searches without the `--drafts` option if you have `render_drafts` set to true in `_config.yml`. If set to false, you must use the `--draft` option to filter on drafts. Also, drafts are excluded automatically when you use any of the date filters, because dates makes little sense with drafts.*
+*Note*: Drafts only appear in searches without the `--drafts` option if you have `render_drafts` set to true in `_config.yml`. If set to false, you must use the `--draft` option to filter on drafts. Also, drafts are excluded automatically when you use any of the date filters, because dates make little sense with drafts.
 
-*Note: Filter on title first and use boolean options last or you may get unexpected results. For example, `hexo edit -g my post` will filter just on "post" whereas `hexo edit my draft -g` will correctly filter on "my draft".*
+*Note*: Filter on title first and use boolean options last or you may get unexpected results. For example, `hexo edit -g my post` will filter just on "post" whereas `hexo edit my draft -g` will correctly filter on "my draft".
 
-*Note: By default, files open in your current terminal window using your `$EDITOR` environment variable. Set it in your dotfiles (`.bashrc` or `.zshrc` are good examples, and don't forget to source the file before testing). The `gui` option (or the lack of an `$EDITOR` variable) will cause files to open with `xdg-open` (linux, osx) or `start` (windows) instead.*
+*Note*: By default, files open in your current terminal window using your `$EDITOR` environment variable. Set it in your dotfiles (for example, in `.bashrc` or `.zshrc`).
+
+*Note*: The `gui` option (or the lack of an `$EDITOR` variable) will cause files to open with `xdg-open` (linux, osx) or `start` (windows). If you're on linux and nothing seems to happen, you can change the handler for plain text markdown files to a `*.desktop` file of your choice. For example, for Sublime Text: `xdg-mime default sublime-text.desktop text/plain`
 
 ## rename command
 
@@ -90,9 +92,9 @@ hexo rename <old title/slug> <-n | --new "new title">
 
 After selecting a file, you will be presented with another menu. From there you can choose whether to rename the filename, the title of the post, both, or cancel altogether.
 
-*Note: if you have set `render_drafts` to false in `_config.yml`, you won't be able to rename drafts from the command line. It works only with that setting set to true or if you publish the post first.*
+*Note*: if you have set `render_drafts` to false in `_config.yml`, you won't be able to rename drafts from the command line. It works only with that setting set to true or if you publish the post first.
 
-*Note: wrap the new title in single or double quotes! If you forget, the presence of spaces or special characters may cause strange behavior.*
+*Note*: wrap the new title in single or double quotes! If you forget, the presence of spaces or special characters may cause strange behavior.
 
 
 ## remove command
@@ -141,4 +143,4 @@ hexo integrate
 
 - Filter on title first and use boolean options last or you may get unexpected results. For example, `hexo edit -g my post` will filter just on "post" whereas `hexo edit my draft -g` will correctly filter on "my draft".
 
-- By default, files open in your current terminal window using your `EDITOR` environment variable. Set it somewhere in your dotfiles (`.bashrc` or `.zshrc` are good locations, and don't forget to source the file or reboot before testing). If `$EDITOR` doesn't exist, or if you use the `gui` option, files will open with `xdg-open` (linux, osx) or `start` (windows) instead.
+- By default, files open in your current terminal window using your `EDITOR` environment variable. Set it somewhere in your dotfiles (`.bashrc` or `.zshrc` are good locations, and don't forget to source the file or reboot before testing). If `$EDITOR` doesn't exist, or if you use the `gui` option, files will open with [xdg-open](https://wiki.archlinux.org/index.php/default_applications#xdg-open_2) (linux, osx) or `start` (windows) instead.
